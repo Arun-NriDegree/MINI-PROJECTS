@@ -1,0 +1,437 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN11XLjUlqirdqUkVPj5Fnn",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Arun-NriDegree/MINI-PROJECTS/blob/main/Creating%20arrays%20using%20numpy\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "_xP48Vd5uEds"
+      },
+      "outputs": [],
+      "source": [
+        "# Numpy - Numeric Python\n",
+        "# Most powerful package - Library\n",
+        "\n",
+        "# Numpy - Dimensions\n",
+        "\n",
+        "# A - One Dimensional Array\n",
+        "# [A, B] || [A\n",
+        "#            B] - Two Dimensional Array - Row || Column\n",
+        "\n",
+        "# Three Dimensional\n",
+        "\n",
+        "# Array - Storing, Manipulating,Similar Data type\n",
+        "\n",
+        "# Faster rhan any mathematical functions\n",
+        "# Convinient compared to other packages\n",
+        "# Memory efficiency\n",
+        "# Support multi dimensional Arrays"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Instalk numpy - pip3 install numpy // pip install numpy"
+      ],
+      "metadata": {
+        "id": "dc2cQQDFv5LW"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np"
+      ],
+      "metadata": {
+        "id": "agV2MLtIwD1X"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Create a numpy array\n",
+        "# 1D array\n",
+        "\n",
+        "arr1D = np.array([1,2,3,4,5])\n",
+        "print(arr1D)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YnQTmdmjwIpY",
+        "outputId": "ca06a8e1-3af0-4120-c1da-f8aa75b3067a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1 2 3 4 5]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Creating 2D array - Matrix\n",
+        "arr2D = np.array([\n",
+        "     [0,0,0],[0,0,0]\n",
+        "])\n",
+        "print(arr2D)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gYcqmFSBwwgL",
+        "outputId": "c788c8c9-e7cf-4902-d2c0-c1336284e76f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[0 0 0]\n",
+            " [0 0 0]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Creating arrays with default values\n",
+        "\n",
+        "# Creating matrix with all values of elements as '0'\n",
+        "allZeros = np. zeros((2,3))\n",
+        "print(allZeros)\n",
+        "\n",
+        "# Creating matrix with all values of elements as '1'\n",
+        "allOnes = np.ones((2,3))\n",
+        "print(allOnes)\n",
+        "\n",
+        "# Creating matrix with all values of elements 'constant value - n ~ Fill value'\n",
+        "allConstant = np.full((2,3),6)\n",
+        "print(allConstant)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2rnPObRWzORn",
+        "outputId": "87a21d37-92fd-4635-de88-edcf160531f7"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[0. 0. 0.]\n",
+            " [0. 0. 0.]]\n",
+            "[[1. 1. 1.]\n",
+            " [1. 1. 1.]]\n",
+            "[[6 6 6]\n",
+            " [6 6 6]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# create an identity matrix - I\n",
+        "\n",
+        "identity = np.eye(4)\n",
+        "print(identity)\n",
+        "\n",
+        "# Identity Matrix - Aij = 1 && Aij = 0\n",
+        "# For all A Belongs to R MxN\n",
+        "# Aij -"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Zb1lSsfv2JMd",
+        "outputId": "8561eaf7-f04f-412f-8740-d9c4dd7f2cb5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[1. 0. 0. 0.]\n",
+            " [0. 1. 0. 0.]\n",
+            " [0. 0. 1. 0.]\n",
+            " [0. 0. 0. 1.]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Creating random Matrices\n",
+        "\n",
+        "# between 0 and 1\n",
+        "rand1 = np.random.rand(3,3)\n",
+        "print(rand1)\n",
+        "\n",
+        "# between a and b\n",
+        "rand2 = np.random.randint(10,20,(3,3))\n",
+        "print(rand2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QPLP79952a83",
+        "outputId": "bf3d3d6d-46c1-47ea-a6dc-bc33ef778ae9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[0.21722796 0.61833727 0.25496687]\n",
+            " [0.89934223 0.35785457 0.85580473]\n",
+            " [0.03587367 0.25957949 0.17795336]]\n",
+            "[[10 15 16]\n",
+            " [18 15 11]\n",
+            " [12 17 12]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Array Properties\n",
+        "arr = np. array([[1,2,3,4],[2,3,4,5]])\n",
+        "print(arr)\n",
+        "\n",
+        "# Shape or array\n",
+        "print(f'\\nThe shape of the array is{arr.shape}')\n",
+        "\n",
+        "# Size of array\n",
+        "print(f'The size of the array is{arr.size}')\n",
+        "\n",
+        "# Datatype of array\n",
+        "print(f'The Data type of the array is{arr.dtype}')\n",
+        "\n",
+        "# Dimensions of array\n",
+        "print(f'The Dimension of the array is{arr.ndim}')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HfP_EaWC8Q5k",
+        "outputId": "e97d06e9-4fc8-4774-90b6-82e0e57d3c0c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[1 2 3 4]\n",
+            " [2 3 4 5]]\n",
+            "\n",
+            "The shape of the array is(2, 4)\n",
+            "The size of the array is8\n",
+            "The Data type of the array isint64\n",
+            "The Dimension of the array is2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Access the elements in 1D Array\n",
+        "\n",
+        "arr = np.array([1,2,3,4])\n",
+        "print(arr)\n",
+        "print(arr[3])\n",
+        "\n",
+        "# Slicing the elements\n",
+        "print(arr[0:2])\n",
+        "\n",
+        "# Access the elements in 2D Array\n",
+        "arr2 = np. array([[1,2,3],[2,3,4]])\n",
+        "# Access the elements in 1D Array\n",
+        "\n",
+        "import numpy as np\n",
+        "arr = np.array([1,2,3,4])\n",
+        "print(arr)\n",
+        "print(arr[3])\n",
+        "\n",
+        "# Slicing the elements\n",
+        "print(arr[0:2])\n",
+        "\n",
+        "# Access the elements in 2D Array\n",
+        "arr2 = np.array([[1,2,3],[2,3,4]])\n",
+        "print(arr2)\n",
+        "print(arr2[1,1])\n",
+        "print(arr2[0,:1]) # first row with all column\n",
+        "print(arr2[:,1]) # first column with all rows"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Lh3u30ho8Xbc",
+        "outputId": "f686bb57-5816-435c-fbcf-e3f2c52153af"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1 2 3 4]\n",
+            "4\n",
+            "[1 2]\n",
+            "[1 2 3 4]\n",
+            "4\n",
+            "[1 2]\n",
+            "[[1 2 3]\n",
+            " [2 3 4]]\n",
+            "3\n",
+            "[1]\n",
+            "[2 3]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#l1 = []\n",
+        "#[l1.append(_) for _ in range(10)]\n",
+        "\n",
+        "l1 = np.arange(10,0,-1)\n",
+        "\n",
+        "print(l1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IxWFoaIgCUQ-",
+        "outputId": "6f1c5ed6-194e-40d5-acbb-63619a152590"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[10  9  8  7  6  5  4  3  2  1]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Mathematical operations\n",
+        "\n",
+        "a = np.array([1,2,3,4])\n",
+        "b = np.array([4,5,6,7])\n",
+        "\n",
+        "print(f'The su of a and b is {a + b}')\n",
+        "print(f'The diff of a and b is {a - b}')\n",
+        "print(f'The product of a and b is {a * b}')\n",
+        "print(f'The division  of a and b is {a / b}')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5DKh3V4yDuzs",
+        "outputId": "89c0eb3b-f2aa-4287-e1e2-eac539fe7244"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The su of a and b is [ 5  7  9 11]\n",
+            "The diff of a and b is [-3 -3 -3 -3]\n",
+            "The product of a and b is [ 4 10 18 28]\n",
+            "The division  of a and b is [0.25       0.4        0.5        0.57142857]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Matrix multiplication\n",
+        "b1 = np.array([[1,2,3],[2,3,4]])\n",
+        "b2 = np.array([[5,5],[8,8],[1,1]])\n",
+        "\n",
+        "# Dot product\n",
+        "c = np.dot(b1,b2)\n",
+        "print(c)"
+      ],
+      "metadata": {
+        "id": "YHKAmhQeDzeJ",
+        "outputId": "3037b18f-2220-44ec-f6f9-cf71af9de7ce",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[24 24]\n",
+            " [38 38]]\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
